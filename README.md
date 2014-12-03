@@ -3,6 +3,10 @@ Minix3_GroupKill
 
 OS Project
 
+FOR MORE INFORMATION ON PROJECT REQUIREMENTS REFER TO Project1.txt
+
+FOR MORE INFORMATION ON SOLUTION REFER TO Report.pdf
+
 
 Group Kill() (Modified Kill())
 
@@ -10,7 +14,7 @@ Kill Command Modifications
 
 To allow other members of the same group as the user to send the kill command to programs started by the user, the check for permission part of the signal.c file was modified to not send the error code EPERM when a user with the same effgid or same realgid tried to send the kill signal.
 
-FOR MORE INFORMATION REFER TO Report.pdf
+
 
 Lessons from this project
 
