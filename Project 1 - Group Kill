@@ -1,0 +1,81 @@
+Project 1 - Group Kill
+
+COP 4600 
+Fall 2014
+
+Due: September 19
+
+Brief Description:
+Modify the kill() library routine, the corresponding Minix3 system call, and 
+other elements within Minix3 as necessary in order to allow any process 
+running in the modified Minix3 to be sent a signal by any other process that
+is in the same protection group.
+
+Deliverables:
+You will 
+1) Make modifications as you see fit and document the changes you made
+2) Produce the modified code and be able to explain what it does and why
+3) Demonstrate the modified system to a TA or grader
+4) Submit modified code and report on Sakai as a tarfile or the equivalent
+5) Create a modified man page describing the new behavior
+
+The documentation for (1) includes comments in the code itself as well as 
+explanation in the report (4). Modified code (2) includes exactly the Minix3
+source files you modified (i.e., all of them and none you did not modify), 
+as well as any modified makefiles. The man page (5) should be a modified 
+version of the existing man pages for kill(1) (user command) and kill(2) 
+(system library call); these should work with the man command.  Use tar(1) 
+to create a tarfile with the required files to submit, and upload this on 
+Sakai. 
+
+The TAs will provide a Doodle poll for you to sign up for a demonstration
+slot - the location will be CSE-309 unless otherwise noted. Be there early
+for your demo and be prepared to show that you have at least 3 different 
+ordinary users on your system, and at least three different protection groups, 
+with each protection group consisting of two of the users and no two groups 
+the same (e.g., users A, B, and C, with protection groups X={A,B}, Y={B,C}, 
+and Z={C,A}). Show that a process owned by A in group X can be killed by a
+processed owned by B in group X, but not by a process owned by B in group Y,
+and simiilar scenarios. You may be asked to show that you are familiar with
+all parts of the process that sets up this scenario.
+
+Documentation:
+In addition to the modified source code and makefile(s), you will provide 
+the following documents:
+man page for kill(1)- a manual page for a modified version of the kill 
+    command that can be called from the shell
+man page for kill(2)- a manual page for a modified version of the kill 
+    system library procedure explaining the interface to the system call
+Report (in PDF format) - this document will explain how you modified the 
+    existing code base to produce the required changes, including what 
+    changes were made to which files and why each change was made.  Files 
+    will first be referenced by their full path names, but local names
+    may be used after that.
+    It will include description of how testing was performed along with any 
+    known bugs.
+    The report will also include a section reflecting on what you learned 
+    from this project, what challenged you the most, and how you dealt with
+    the challenge(s). 
+    Note that the report is not intended to be more than a few pages long, 
+    and it can include pictures/screen captures/etc. as appropriate. The key 
+    is to convey how this part of the system works and how you modified it to
+    work differently. 
+
+Submission:
+You will tar all modified source code files from Minix3, along with the 
+documentation, new source code files for the program and its makefile, using 
+the tar facility.  The tarball will unpack in the current directory.
+
+Demonstration:
+You will sign up to demonstrate your code the the TA online in a doodle poll
+provided via announcement later.
+You will have 10 minutes to demo and to answer questions, so be prepared by 
+bringing your laptop with the demonstration ready.  
+Do not be late for your demo. Missed demo appointments will deduct 5 points 
+from your score for each missed appointment (defined as 5 or more minutes 
+late). 
+
+Helpful resources:
+The Minix3.org website has many helpful documents, and we will add documents 
+to the class website of a more specific nature.  
+
